@@ -1,38 +1,192 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'open sans';
+    text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    background-color: #292828;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+header{
+    position: relative;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 10px;
+    align-items: center;
+    display: flex;
+    width: 1220px;
+    height: 70px;
+    background-color: #313030;
+    
 }
 
-.App-link {
-  color: #61dafb;
+
+.logo{
+    padding: 10px;
+    background-color: #313030;
+    box-sizing: content-box;
+    border: 1px solid #fff;
+    color: #fff;
+    margin-left: 30px;
+    filter: drop-shadow(1.88095px 2.82143px 0px #FFFFFF);
+                        border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.links{
+    margin-left: 50px;
+}
+
+.links a {
+    color: #fff;
+    font-size: 13px;
+    font-family: 'roboto mono';
+    text-decoration: none;
+    margin: 0 20px 0 20px;
+}
+
+.links a:hover{
+    border-bottom: 1px solid #fff;
+
+}
+
+
+.sing-in{
+    margin-left: auto;
+}
+
+
+
+
+
+/* FIM HEADER  */
+
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+}
+
+
+
+section h1{
+    position: relative;
+    padding: 10px;
+    font-size: 29px;
+    border:1px solid #000000;
+    background-color: #292828;
+    margin-top: 50px;
+    color: #fff;
+}
+
+section h1::after{
+    content: "";
+    margin: 2px;
+    border: 1px solid rgb(255, 255, 255);
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    z-index: -10;
+    top: 2px;
+    left: 2px;
+    right: 0px;
+    bottom: 0px;
+}
+
+#search{
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+    background-color: #313030;
+    width: 550px;
+    height: 47px;
+    margin-top: 50px;
+    outline: none;
+    color: #fff;
+}
+
+button[type="submit"]{
+    cursor: pointer;
+    border-radius: 5px;
+    color: #252525;
+    border: 1px solid #000;
+    background-color: #fff;
+    margin-left: 20px;
+    padding: 9px;
+}
+
+.filtros{
+    font-family: 'roboto';
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    color: #fff;
+    gap: 10px;
+    font-size: 13px;
+}
+
+.filtros a{
+    color: #fff;
+}
+
+
+.filtros > span{
+    padding: 5px;
+    font-family: 'roboto';
+}
+.links > a:nth-child(5){
+    padding: 5px ;
+    border: 1px solid #fff;
+}
+
+.imagens{
+    margin-top: 20px;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    gap: 50px;
+}
+
+.imagens div{
+    position: relative;
+    width: 220px;
+    height: 220px;
+}
+.imagens img {
+    width: 200px;
+    height: 200px;
+}
+
+
+
+.imagens  div::after{
+    content: "";
+    border: 1px solid rgb(255, 255, 255);
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 4px;
+    z-index: -2;
+    left: px;
+    right: 4px;
+    bottom: 0px;
+    margin: 2px;
+
 }
